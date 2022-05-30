@@ -1,8 +1,3 @@
-Array.from(document.querySelectorAll(".letter")).forEach(el => {
-   el.innerText = randomLetter();
-});
+import { carousel } from "./carousel-script.js";
 
-function randomLetter(){
-    const alphabet = "abcdefghijklmnopqrstuvwxyz"
-    return alphabet[Math.floor(Math.random() * alphabet.length)]
-}
+carousel();
