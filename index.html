@@ -10,10 +10,15 @@
 </head>
 
 <body>
-    <div>
-        <div class="scarlet"></div>
-        <div class="violet"></div>
-    </div>
+    <!-- color button -->
+    <button class="modeBtn" onclick="dark()">Scarlet/Violet</button>
+    <script>
+        function dark() {
+
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
 
     <img class="logo" src="img/pokemon_logo.webp" alt="">
 
@@ -61,14 +66,7 @@
             <button class="btn btn-prev">&#60;</button>
         </div>
     </div>
-    <button onclick="dark()">Scarlet/Violet</button>
-    <script>
-        function dark() {
 
-            var element = document.body;
-            element.classList.toggle("dark-mode");
-        }
-    </script>
 
     <script type="module" src="script.js"></script>
 </body>
