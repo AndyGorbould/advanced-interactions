@@ -34,6 +34,7 @@ body {
     margin-bottom: 5px;
     margin-left: auto;
     margin-right: auto;
+    /* background-image: url(/img/xy05-wallpaper4-1024-en.jpg); */
 }
 
 .container {
@@ -41,7 +42,6 @@ body {
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
-
 }
 
 .slider {
@@ -94,3 +94,116 @@ body {
     top: 45%;
     right: 2%;
 }
+
+.collage {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.image {
+  
+        float: left;
+        width:  50px;
+        height: 50px;
+        object-fit: cover;
+  
+    
+    scale: 1;
+    transition: .6s ease-in-out;
+}
+
+.image:hover {
+    transform: scale(1.2);
+    transition: .6s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+.wrapper {
+	width: 75%;
+	margin: 40px auto;
+}
+
+div.gallery {
+	margin-top: 30px;
+}
+
+div.gallery ul {
+	list-style-type: none;
+	margin-left: 35px;
+}
+
+/* animation */
+div.gallery ul li, div.gallery li img {
+	-webkit-transition: all 0.1s ease-in-out;
+  	-moz-transition: all 0.1s ease-in-out;
+  	-o-transition: all 0.1s ease-in-out;
+  	transition: all 0.1s ease-in-out;
+}
+
+div.gallery ul li {
+	position: relative;
+	float: left;
+	width: 130px;
+	height: 130px;
+	margin: 5px;
+	padding: 5px;
+	z-index: 0;
+}
+
+/* Make sure z-index is higher on hover */
+/* Ensure that hover image overlapped the others */
+div.gallery ul li:hover {
+	z-index: 5;
+}
+
+/* Image is position nicely under li */
+div.gallery ul li img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	border: 1px solid #dddddd;
+	padding: 5px;
+	width: 130px;
+	height: 130px;
+	background: #f0f0f0;
+}
+
+div.gallery ul li img:hover {
+	width: 200px;
+	height: 200px;
+	margin-top: -130px;
+	margin-left: -130px;
+	top: 65%;
+	left: 65%;
+}
+
+p.attribution {
+	font-family: 'Consolas';
+	color: #000;
+	clear: both;
+	text-align: center;
+	line-height: 25px;
+	padding-top: 30px;
+}
+
+p.attribution a {
+	color: #4c8d7c;
+}
+
+	div.gallery ul {
+		list-style-type: none;
+		margin: 0;
+	}
+
+
+
