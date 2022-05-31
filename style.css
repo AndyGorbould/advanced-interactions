@@ -214,27 +214,30 @@ div.popupText {
     margin-top: 25px;
     margin-left: 20%;
     margin-right: 20%;
+    
 }
 
 .poke-hidden {
+    opacity: 0;
+    transition: 0.5s;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
     position: absolute;
-    width: 10px;
-    /* can someone tell me why this won't change size??? */
+    width: auto;
+    
+    /* can someone tell me why image won't change size??? */
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+/*
+    _____ _                         
+   / ____| |                        
+  | |    | |__   __ _ ___  ___ _ __ 
+  | |    | '_ \ / _` / __|/ _ \ '__|
+  | |____| | | | (_| \__ \  __/ |   
+   \_____|_| |_|\__,_|___/\___|_|    */
 
 div.game {
     display: inline-block;
@@ -244,11 +247,20 @@ div.game {
 }
 
 
+.boxA {
+    position: relative;
+    margin: 0;
+    /* background-image: url(/img/xy05-wallpaper4-1024-en.jpg); */
+}
+
 .chaser {
+    position: absolute;
+    transition: 0.2s ease-in;
     width: 50px;
     height: 50px;
     background: red;
     border-radius: 50%;
+    box-shadow: 5px 5px 5px black;
 }
 
 .runner {
@@ -259,6 +271,9 @@ div.game {
 }
 
 .box {
-    border: 1px solid grey;
+    border: 4px solid black;
+    border-radius: 15px;
     height: 350px;
+    margin-bottom: 50px;
+    background-color: #4cf0c4;
 }
