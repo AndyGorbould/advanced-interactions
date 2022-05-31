@@ -170,12 +170,9 @@ div.gallery ul li:hover {
 div.gallery ul li img {
 	position: absolute;
 	left: 0;
-	top: 0;
-	border: 1px solid #dddddd;
-	padding: 5px;
+	top: 0;	
 	width: 130px;
 	height: 130px;
-	background: #f0f0f0;
 }
 
 div.gallery ul li img:hover {
@@ -204,6 +201,3 @@ p.attribution a {
 		list-style-type: none;
 		margin: 0;
 	}
-
-
-
