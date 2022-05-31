@@ -1,8 +1,8 @@
 // import & call "carousel-script.js" function
 import { carousel } from "./carousel-script.js";
 carousel();
-// import { imageDisplay } from "./image-display.js";
-// imageDisplay();
+import { imageDisplay } from "./image-display.js";
+imageDisplay();
 
 ////////////////////////////////////////////
 // Chaser
